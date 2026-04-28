@@ -3,163 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Branding | Siswa DKV</title>
+    <title>Beranda - Nasrul Akbar Fakih</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Desain Modern untuk Anak DKV */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212; /* Warna Gelap Profesional */
-            color: #ffffff;
-            line-height: 1.6;
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
         }
-
-        header {
-            background-color: #1f1f1f;
-            padding: 20px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        .profile-glow {
+            position: relative;
         }
-
-        nav {
-            text-align: center;
-        }
-
-        nav a {
-            color: #00adb5; /* Warna Aksen Teal */
-            text-decoration: none;
-            margin: 0 20px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #eeeeee;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #1f1f1f;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            text-align: center;
-        }
-
-        .profile-img {
-            width: 200px;
-            height: 200px;
+        .profile-glow::after {
+            content: '';
+            position: absolute;
+            inset: -10px;
+            background: linear-gradient(45deg, #6366f1, #a855f7);
             border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #00adb5;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            color: #00adb5;
-            margin-bottom: 10px;
-        }
-
-        .tagline {
-            font-style: italic;
-            color: #888;
-            margin-bottom: 30px;
-        }
-
-        .skills-grid {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .skill-badge {
-            background: #393e46;
-            padding: 8px 20px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            border: 1px solid #00adb5;
-        }
-
-        .portfolio-item {
-            margin-bottom: 40px;
-            text-align: left;
-            border-bottom: 1px solid #333;
-            padding-bottom: 20px;
-        }
-
-        .portfolio-img {
-            width: 100%;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-
-        .portfolio-img:hover {
-            transform: scale(1.02);
-        }
-
-        .contact-btn {
-            display: inline-block;
-            background-color: #00adb5;
-            color: #eeeeee;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: background 0.3s;
-        }
-
-        .contact-btn:hover {
-            background-color: #008f96;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            font-size: 0.8rem;
-            color: #555;
+            z-index: -1;
+            filter: blur(15px);
+            opacity: 0.4;
         }
     </style>
 </head>
-<body>
-
-    <header>
-        <nav>
-            <a href="index.html">Beranda</a>
-            <a href="portfolio.html">Portofolio</a>
-            <a href="kontak.html">Kontak</a>
-        </nav>
-    </header>
-
-    <div class="container">
-        <!-- HALAMAN UTAMA (INDEX) CONTENT -->
-        <img src="profil.jpg" alt="Foto Profil [Nama Kamu]" class="profile-img">
-        <h1>[Nasrul Akbar Fakih]</h1>
-        <p class="tagline">Calon Desainer Komunikasi Visual | SMK Negeri 1 Batang</p>
-        
-        <p>Saya adalah seorang kreatif yang berfokus pada solusi desain yang estetis dan fungsional. Berpengalaman dalam mengerjakan proyek yang berfokus pada desain.</p>
-
-        <h3>Keahlian Utama:</h3>
-        <div class="skills-grid">
-            <span class="skill-badge">Coreldraw</span>
-            <span class="skill-badge">canva</span>
-            <span class="skill-badge">Figma</span>
-            <span class="skill-badge">Photography</span>
+<body class="bg-[#0f172a] text-slate-200 min-h-screen">
+    <!-- Navigasi -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0f172a]/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="font-bold text-xl tracking-tighter text-indigo-500">NASRUL.DEV</div>
+            <div class="flex gap-8">
+                <a href="index.html" class="text-indigo-400 text-sm font-medium border-b-2 border-indigo-500 pb-1">Beranda</a>
+                <a href="portfolio.html" class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Portofolio</a>
+                <a href="kontak.html" class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Kontak</a>
+            </div>
         </div>
-    </div>
+    </nav>
 
-    <footer>
-        &copy; 2026 [Nasrul Akbar Fakih] - Tugas DKV Pak Hendro
+    <main class="pt-32 pb-20 max-w-5xl mx-auto px-6">
+        <section class="flex flex-col md:flex-row items-center gap-12">
+            <div class="profile-glow">
+                <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-indigo-500/30 bg-slate-800">
+                    <!-- Foto Nasrul diperbarui dengan link terbaru -->
+                    <img src="https://www.image2url.com/r2/default/images/1777348888085-84b7b4b3-8276-4fb7-9896-c5ebddb50e33.jpeg" alt="Foto Profil Nasrul Akbar Fakih" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/400?text=Nasrul+Akbar+Fakih'">
+                </div>
+            </div>
+
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight">Nasrul Akbar Fakih</h1>
+                <p class="text-lg text-slate-400 mb-6">Siswa DKV & Calon Desainer Muda yang berfokus pada estetika visual dan fungsionalitas desain.</p>
+                
+                <div class="glass-card p-6 mb-8">
+                    <h3 class="text-sm uppercase tracking-widest text-indigo-400 font-bold mb-4 text-left">Pendidikan</h3>
+                    <p class="font-semibold text-white text-left">SMK Negeri 1 Desain Visual</p>
+                    <p class="text-slate-400 text-sm text-left">Jurusan Desain Komunikasi Visual (DKV)</p>
+                </div>
+
+                <h3 class="text-sm uppercase tracking-widest text-indigo-400 font-bold mb-4 text-center md:text-left">Keahlian Utama</h3>
+                <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                    <span class="bg-indigo-500/10 text-indigo-400 px-4 py-2 rounded-full text-sm border border-indigo-500/20 font-medium">Coreldraw</span>
+                    <span class="bg-indigo-500/10 text-indigo-400 px-4 py-2 rounded-full text-sm border border-indigo-500/20 font-medium">Canva</span>
+                    <span class="bg-indigo-500/10 text-indigo-400 px-4 py-2 rounded-full text-sm border border-indigo-500/20 font-medium">Figma</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-10 text-center border-t border-white/5 text-slate-500 text-sm">
+        <p>&copy; 2026 Nasrul Akbar Fakih - Tugas Praktikum DKV Pak Hendro</p>
     </footer>
-
 </body>
 </html>
