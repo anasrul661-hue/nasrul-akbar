@@ -2,22 +2,164 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Profil Saya - DKV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Branding | Siswa DKV</title>
+    <style>
+        /* Desain Modern untuk Anak DKV */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Warna Gelap Profesional */
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            color: #00adb5; /* Warna Aksen Teal */
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #eeeeee;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #00adb5;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #00adb5;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        .skills-grid {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .skill-badge {
+            background: #393e46;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid #00adb5;
+        }
+
+        .portfolio-item {
+            margin-bottom: 40px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+            padding-bottom: 20px;
+        }
+
+        .portfolio-img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .portfolio-img:hover {
+            transform: scale(1.02);
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: #00adb5;
+            color: #eeeeee;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .contact-btn:hover {
+            background-color: #008f96;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-    <nav align="center">
-        <a href="index.html">Beranda</a> | 
-        <a href="portfolio.html">Portofolio</a> | 
-        <a href="kontak.html">Kontak</a>
-    </nav>
-    <hr>
-    <div align="center">
-        <h1>Halo, saya [Nasrul Akbar Fakih]</h1>
-        <img src="profil.jpg" alt="Foto Profil" width="200">
-        <p><strong>Sekolah:</strong> SMK Negeri 1 Batang</p>
-        <p><strong>Jurusan:</strong> Visual Communication Design (DKV)</p>
-        <p><strong>Tentang Saya:</strong></p>
-        <p>Saya adalah desainer muda yang antusias dalam bidang desain kemasan dan poster digital. Saya terus mengasah kemampuan dalam menggunakan Coreldraw, Canva, dan Figma untuk menciptakan karya visual yang komunikatif.</p>
+
+    <header>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="portfolio.html">Portofolio</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- HALAMAN UTAMA (INDEX) CONTENT -->
+        <img src="profil.jpg" alt="Foto Profil [Nama Kamu]" class="profile-img">
+        <h1>[Nasrul Akbar Fakih]</h1>
+        <p class="tagline">Calon Desainer Komunikasi Visual | SMK Negeri 1 Batang</p>
+        
+        <p>Saya adalah seorang kreatif yang berfokus pada solusi desain yang estetis dan fungsional. Berpengalaman dalam mengerjakan proyek yang berfokus pada desain.</p>
+
+        <h3>Keahlian Utama:</h3>
+        <div class="skills-grid">
+            <span class="skill-badge">Coreldraw</span>
+            <span class="skill-badge">canva</span>
+            <span class="skill-badge">Figma</span>
+            <span class="skill-badge">Photography</span>
+        </div>
     </div>
+
+    <footer>
+        &copy; 2026 [Nasrul Akbar Fakih] - Tugas DKV Pak Hendro
+    </footer>
+
 </body>
 </html>
