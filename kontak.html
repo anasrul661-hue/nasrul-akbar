@@ -3,49 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hubungi Saya | Siswa DKV</title>
+    <title>Kontak - Nasrul Akbar Fakih</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #121212; color: #fff; line-height: 1.6; }
-        header { background-color: #1f1f1f; padding: 20px 0; position: sticky; top: 0; z-index: 1000; text-align: center; }
-        nav a { color: #00adb5; text-decoration: none; margin: 0 20px; font-weight: bold; text-transform: uppercase; }
-        .container { max-width: 600px; margin: 50px auto; padding: 40px; background-color: #1f1f1f; border-radius: 15px; text-align: center; }
-        h1 { color: #00adb5; }
-        .contact-list { list-style: none; padding: 0; margin: 30px 0; }
-        .contact-list li { margin: 20px 0; font-size: 1.2rem; }
-        .contact-list a { color: #fff; text-decoration: none; border-bottom: 1px dashed #00adb5; }
-        .contact-list a:hover { color: #00adb5; }
-        .whatsapp-btn { display: block; background-color: #25d366; color: white; padding: 15px; border-radius: 10px; text-decoration: none; font-weight: bold; margin-top: 30px; }
-        footer { text-align: center; padding: 30px; font-size: 0.8rem; color: #555; }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+        }
     </style>
 </head>
-<body>
+<body class="bg-[#0f172a] text-slate-200 min-h-screen">
+    <!-- Navigasi -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0f172a]/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="font-bold text-xl tracking-tighter text-indigo-500">NASRUL.DEV</div>
+            <div class="flex gap-8">
+                <a href="index.html" class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Beranda</a>
+                <a href="portfolio.html" class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Portofolio</a>
+                <a href="kontak.html" class="text-indigo-400 text-sm font-medium border-b-2 border-indigo-500 pb-1">Kontak</a>
+            </div>
+        </div>
+    </nav>
 
-    <header>
-        <nav>
-            <a href="index.html">Beranda</a>
-            <a href="portfolio.html">Portofolio</a>
-            <a href="kontak.html" style="color: #fff;">Kontak</a>
-        </nav>
-    </header>
+    <main class="pt-32 pb-20 max-w-2xl mx-auto px-6 text-center">
+        <div class="mb-12">
+            <!-- Foto Nasrul di halaman kontak -->
+            <div class="w-32 h-32 rounded-full overflow-hidden border-2 border-indigo-500 mx-auto mb-6">
+                <img src="https://www.image2url.com/r2/default/images/1777348888085-84b7b4b3-8276-4fb7-9896-c5ebddb50e33.jpeg" alt="Foto Profil Nasrul Akbar Fakih" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/400?text=Nasrul'">
+            </div>
+            <h2 class="text-3xl font-bold mb-2">Mari Terhubung!</h2>
+            <p class="text-slate-400">Silakan hubungi saya untuk kolaborasi atau proyek desain komunikasi visual.</p>
+        </div>
 
-    <div class="container">
-        <h1>Mari Berkolaborasi!</h1>
-        <p>Saya terbuka untuk proyek desain lepas maupun kerja sama lainnya.</p>
-        
-        <ul class="contact-list">
-            <li>Email: <a href="mailto:anasrul661@gmail.com">anasrul661@gmail.com</a></li>
-            <li>Instagram: <a href="https://instagram.com/nasrulajaaaaaa" target="_blank">@usernamekamu</a></li>
-            <li>Behance: <a href="https://behance.net/usernamekamu" target="_blank">behance.net/usernamekamu</a></li>
-        </ul>
+        <div class="grid grid-cols-1 gap-4">
+            <!-- Email Baru -->
+            <a href="mailto:anasrul661@gmail.com" class="glass-card p-6 flex flex-col sm:flex-row items-center justify-between hover:bg-white/5 transition-all group">
+                <div class="flex items-center gap-4">
+                    <span class="text-2xl group-hover:scale-110 transition-transform">✉️</span>
+                    <span class="font-medium">Email Profesional</span>
+                </div>
+                <span class="text-indigo-400 mt-2 sm:mt-0">anasrul661@gmail.com</span>
+            </a>
+            
+            <!-- WhatsApp Baru -->
+            <a href="https://wa.me/6281554604493" target="_blank" class="glass-card p-6 flex flex-col sm:flex-row items-center justify-between hover:bg-white/5 transition-all group">
+                <div class="flex items-center gap-4">
+                    <span class="text-2xl group-hover:scale-110 transition-transform">💬</span>
+                    <span class="font-medium">WhatsApp</span>
+                </div>
+                <span class="text-green-400 mt-2 sm:mt-0">+62 815-5460-4493</span>
+            </a>
 
-        <a href="https://wa.me/6281554604493" class="whatsapp-btn" target="_blank">
-            Hubungi via WhatsApp (Klik di Sini)
-        </a>
-    </div>
+            <div class="pt-10">
+                <p class="text-sm text-slate-500 uppercase tracking-widest mb-6">Media Sosial</p>
+                <div class="flex justify-center gap-10">
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors underline decoration-indigo-500/30 underline-offset-4">Instagram</a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors underline decoration-indigo-500/30 underline-offset-4">Behance</a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors underline decoration-indigo-500/30 underline-offset-4">Dribbble</a>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <footer>
-        &copy; 2026 [Nasrul Akbar Fakih] - Tugas DKV Pak Hendro
+    <footer class="py-10 text-center border-t border-white/5 text-slate-500 text-sm">
+        <p>&copy; 2026 Nasrul Akbar Fakih - Tugas Praktikum DKV Pak Hendro</p>
     </footer>
-
 </body>
 </html>
