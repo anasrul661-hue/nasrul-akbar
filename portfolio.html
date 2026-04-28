@@ -2,37 +2,65 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Portofolio Saya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Nasrul Akbar Fakih</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+        }
+    </style>
 </head>
-<body>
-    <nav align="center">
-        <a href="index.html">Beranda</a> | 
-        <a href="portfolio.html">Portofolio</a> | 
-        <a href="kontak.html">Kontak</a>
+<body class="bg-[#0f172a] text-slate-200 min-h-screen">
+    <!-- Navigasi -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0f172a]/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="font-bold text-xl tracking-tighter text-indigo-500">NASRUL.DEV</div>
+            <div class="flex gap-8">
+                <a href="index.html" class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Beranda</a>
+                <a href="portfolio.html" class="text-indigo-400 text-sm font-medium border-b-2 border-indigo-500 pb-1">Portofolio</a>
+                <a href="kontak.html" class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Kontak</a>
+            </div>
+        </div>
     </nav>
-    <hr>
-    <div align="center">
-        <h2>Galeri Karya</h2>
-        
-        <a href="https://ibb.co.com/rfsFNMhy">
-            <img src="karya1.jpg" alt="Packaging" width="300">
-        </a>
-        <h3>Packaging Street Food</h3>
-        <p>Desain kemasan kreatif untuk produk makanan lokal.</p>
-        <hr width="50%">
 
-        <a href="https://ibb.co.com/dwNV3BCV">
-            <img src="karya2.jpg" alt="Poster" width="300">
-        </a>
-        <h3>Desain Kalender</h3>
-        <p>Desain kalender 2026.</p>
-        <hr width="50%">
+    <main class="pt-32 pb-20 max-w-5xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-2 uppercase tracking-tight">Eksplorasi Kreatif</h2>
+            <p class="text-slate-400">Koleksi karya desain komunikasi visual pilihan saya.</p>
+        </div>
 
-        <a href="https://ibb.co.com/KxzLc64t">
-            <img src="karya3.jpg" alt="Logo" width="300">
-        </a>
-        <h3>Desain amplop lebaran lucu</h3>
-        <p>Desain amplop lebaran terbaru lucu.</p>
-    </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Karya 1 -->
+            <div class="glass-card p-4 overflow-hidden group hover:border-indigo-500/50 transition-all">
+                <img src="https://www.image2url.com/r2/default/images/1777349102147-fc9d364b-0cf0-4360-82f1-f538ea6a9724.jpeg" alt="Desain Komposisi Visual" class="w-full h-56 object-cover rounded-xl mb-4 group-hover:scale-105 transition-transform duration-500">
+                <h4 class="font-bold text-lg mb-2 text-indigo-400">Analisis Komposisi Warna</h4>
+                <p class="text-sm text-slate-400">Project pembuatan packaging yang cocok untuk streetfood.</p>
+            </div>
+
+            <!-- Karya 2 -->
+            <div class="glass-card p-4 overflow-hidden group hover:border-indigo-500/50 transition-all">
+                <img src="https://www.image2url.com/r2/default/images/1777349140198-89a642be-2b34-4d5b-9b31-08fc28fa57a4.jpeg" alt="Desain Tipografi Modern" class="w-full h-56 object-cover rounded-xl mb-4 group-hover:scale-105 transition-transform duration-500">
+                <h4 class="font-bold text-lg mb-2 text-indigo-400">Identitas Visual Digital</h4>
+                <p class="text-sm text-slate-400">Pembuatan kalender yang mengandung unsur estetika.</p>
+            </div>
+
+            <!-- Karya 3 -->
+            <div class="glass-card p-4 overflow-hidden group hover:border-indigo-500/50 transition-all">
+                <img src="https://www.image2url.com/r2/default/images/1777349168955-de56717e-94df-4eaa-a0bb-db1e6eb68f84.jpeg" alt="Konsep Layout DKV" class="w-full h-56 object-cover rounded-xl mb-4 group-hover:scale-105 transition-transform duration-500">
+                <h4 class="font-bold text-lg mb-2 text-indigo-400">Eksplorasi Layouting</h4>
+                <p class="text-sm text-slate-400">Desain amplop lebaran yang menarik perhatian anak-anak.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-10 text-center border-t border-white/5 text-slate-500 text-sm">
+        <p>&copy; 2026 Nasrul Akbar Fakih - Tugas Praktikum DKV Pak Hendro</p>
+    </footer>
 </body>
 </html>
